@@ -68,3 +68,12 @@ end
 ```
 
 * run test (`bundle exec rspec`) - result `success`
+
+## Step `2-persistence`
+
+### Create `contact` model and views
+
+* `rails g scaffold contact firstname lastname email telephone`
+* apply migration: `bin/rake db:migrate`
+* start rails app `rails s`
+* play with http://localhost:3000/contacts
