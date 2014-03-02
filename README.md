@@ -80,9 +80,16 @@ end
 
 ## Step `3-devise`
 
-* add devise into you Gemfile: `gem 'devise'`
+* add devise into your Gemfile: `gem 'devise'`
 * install missing bundle: `bundle install`
 * run devise generator: `rails generate devise:install`
 * generate user model: `rails g model user`
 * apply migrations: `bin/rake db:migrate`
 * play with http://localhost:3000/contacts
+
+## Step `4-spring`
+ * add spring into your Gemfile `gem "spring", group: :development`
+ * add rspec spring integration into your Gemfile `gem "spring-commands-rspec", group: :development`
+ * update dependencies: `bundle install`
+ * springify executables: `bundle exec spring binstub --all`
+ * start tests using following command `./bin/spring rspec`
