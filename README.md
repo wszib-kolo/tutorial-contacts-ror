@@ -93,3 +93,14 @@ end
  * update dependencies: `bundle install`
  * springify executables: `bundle exec spring binstub --all`
  * start tests using following command `./bin/spring rspec`
+
+## Step `5-guard`
+  * add guard into Gemfile development group:
+
+```
+gem 'guard-rspec', require: false`
+gem 'guard-spring'
+```
+  * install missing gems: `bundle install`
+  * execute `guard init spring`
+  * start guard: `guard`
