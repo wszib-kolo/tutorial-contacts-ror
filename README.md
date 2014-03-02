@@ -77,3 +77,12 @@ end
 * apply migration: `bin/rake db:migrate`
 * start rails app `rails s`
 * play with http://localhost:3000/contacts
+
+## Step `3-devise`
+
+* add devise into you Gemfile: `gem 'devise'`
+* install missing bundle: `bundle install`
+* run devise generator: `rails generate devise:install`
+* generate user model: `rails g model user`
+* apply migrations: `bin/rake db:migrate`
+* play with http://localhost:3000/contacts
